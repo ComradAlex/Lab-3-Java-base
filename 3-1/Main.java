@@ -50,8 +50,8 @@ public class Main
             cont++;
         }
 
-        FoodItem mask_candy = new FoodItem(item_fld[0], Float.parseFloat(item_fld[1]), Short.parseShort(item_fld[2]));
-        mask_candy.printAll();
+        FoodItem maskcandy = new FoodItem(item_fld[0], Float.parseFloat(item_fld[1]), Short.parseShort(item_fld[2]));
+        maskcandy.printAll();
         }
 
 
