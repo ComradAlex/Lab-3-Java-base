@@ -1,29 +1,26 @@
 import java.util.*;
 
-public class U0901Main {
+public class U0901WorkArray <T extends Number> {
     
+    public T[] arrNums;
     
-    public static void main(String[] args){
-        Integer intArr[] = {10,20,15};
-        Float floatArr[] = new Float[6];
 
+    public double sum(){
+        double doubleWork = 0.0;
+        
 
-
-        for (int i = 0; i < floatArr.length; i++) {
-            floatArr[i] = new Random().nextFloat();
-            System.out.println(floatArr[i]);
+        for (Number n : arrNums) {
+            
+            
+            doubleWork += n.doubleValue();
+            
         }
+        
+        return doubleWork;
+    }
+    
 
-
-
-        U0901WorkArray<Integer> insWorkArrayInt = new U0901WorkArray<Integer>(intArr);
-        U0901WorkArray<Float> insWorkArrayFloat = new U0901WorkArray<Float>(floatArr);
-
-
-        System.out.println(insWorkArrayInt.sum());
-        System.out.println(insWorkArrayFloat.sum());
-
-
-
+    public U0901WorkArray(T[] arrNums) {
+        this.arrNums = arrNums;
     }
 }
